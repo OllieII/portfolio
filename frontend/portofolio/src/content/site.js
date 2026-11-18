@@ -1,6 +1,6 @@
 export const siteText = {
   seo: {
-    defaultTitle: 'Home',
+    defaultTitle: 'Olly Guo | Human-Centered AI & Behavioral Modeling',
   },
   navigation: {
     about: 'About',
@@ -12,7 +12,7 @@ export const siteText = {
     name: 'Olly Guo',
     portraitAlt: 'Olly Guo',
     caption: 'Computational user understanding through the behavioral traces people leave in interactive systems.',
-    introduction: 'I use behavioral telemetry and interpretable models to identify user states and friction, then translate the evidence into product hypotheses, measurable interventions, and research questions about adaptive human-AI systems.',
+    introduction: 'I am an M.S. Computer Science student at the University of Illinois Urbana-Champaign. I study behavior in interactive systems using telemetry, interpretable models, and human–AI studies. My current work spans LLM models of player actions, virtual embodiment, context-aware assistants, and AI-supported learning. I also teach STAT 107 and develop games in Unity.',
     chips: [
       'MSCS @ UIUC',
       'Behavioral modeling',
@@ -113,18 +113,18 @@ export const siteText = {
       'My work spans behavioral modeling, interpretable machine learning, VR/XR, learning technologies, and interactive system design. Across projects, I combine system building, empirical studies, and quantitative analysis, while paying particular attention to validity, generalization, and human agency.',
     ],
     threadLabel: 'Current research thread',
-    thread: 'Connecting behavioral traces with user experience, interpretable models, and adaptive interaction across immersive and learning contexts.',
+    thread: 'Modeling player actions and virtual embodiment, studying how assistants communicate awareness, and designing AI support for learning.',
     approachLabel: 'Research approach',
     approach: 'Build interactive systems → study human experience → model behavioral patterns → translate evidence into better design.',
     featuredLabel: 'Featured through this lens',
     projectLabel: 'Viewed through this lens',
     coreQuestionLabel: 'Research question',
     focusLabel: 'Research focus',
-    evidenceLabel: 'First evidence',
+    evidenceLabel: 'Work to date',
     coreQuestion: 'Which early behavioral signals reliably represent user state and friction, and how well do they generalize across users and interactive contexts?',
     methodsLabel: 'Methods',
     methods: 'VR telemetry / behavioral modeling / interpretable ML / HCI',
-    relevanceLabel: 'What was learned / boundaries',
+    relevanceLabel: 'Research context & scope',
     relevance: 'This project grounds my current direction in computational user understanding while making the limits of behavioral inference explicit.',
     supportingLabel: 'Supporting Work',
     supportingTitle: 'Additional evidence for the research trajectory',
@@ -135,6 +135,10 @@ export const siteText = {
       'User-state modeling',
       'Cross-context evaluation',
       'Experimental and observational analysis',
+      'Sequence-model evaluation',
+      'Survey-to-telemetry linkage',
+      'Study and stimulus design',
+      'Literature screening and evidence synthesis',
     ],
     archiveLabel: 'Full Archive',
   },
@@ -146,7 +150,9 @@ export const lensConfig = {
     title: 'Behavioral Data → Product Decisions',
     detailSectionOrder: [
       'Product Translation (Proposed)',
+      'Current Status',
       'Project Description',
+      'My Contribution',
       'My Responsibility',
       'My Role',
       'Tech Stack',
@@ -156,7 +162,9 @@ export const lensConfig = {
     label: 'HCI & Human-Centered AI Research',
     title: 'Human-Centered AI & Interactive Systems',
     detailSectionOrder: [
+      'Current Status',
       'Project Description',
+      'My Contribution',
       'My Responsibility',
       'My Role',
       'Tech Stack',
@@ -171,3 +179,4 @@ export const lensConfig = {
 };
 
 export default siteText;
+

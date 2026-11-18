@@ -18,7 +18,7 @@
       "degree": "M.S. in Computer Science",
       "school": "University of Illinois Urbana-Champaign",
       "location": "Urbana-Champaign, IL",
-      "duration": "Current",
+      "duration": "Aug 2026–Present · Expected May 2028",
       "relevant_coursework": "Focus: behavioral modeling, computational human-AI interaction, interpretable machine learning, and product experimentation."
     },
     {
@@ -31,7 +31,7 @@
   ],
   "publications": [
     {
-      "authors": "Olly (Ziqi) Guo and Kevin Ponto",
+      "authors": "Z. Guo, D. Gagnon, and K. Ponto",
       "title": "Using Head Movements to Predict Performance and Early Quitting in Virtual Reality",
       "venue": "Under review for IEEE Transactions on Visualization and Computer Graphics (TVCG), 2026",
       "projectLink": "/portfolio/projects/2"
@@ -52,13 +52,24 @@
   ],
   "research_experience": [
     {
-      "title": "Undergraduate Researcher",
+      "title": "Graduate Research Projects",
+      "company": "University of Illinois Urbana-Champaign",
+      "location": "Urbana-Champaign, IL",
+      "duration": "Fall 2026–Present",
+      "responsibilities": [
+        "Collaborating with Dominic Kao on frozen LLM player-action prediction, survey-linked behavioral measures of embodiment, and AI-assistant awareness, warmth, and eeriness.",
+        "Contributing Unity/C# study development and telemetry validation for the Hatched/Waddle penguin perspective study.",
+        "Contributing literature screening, full-text review, and evidence synthesis to an avatar-color scoping review."
+      ]
+    },
+    {
+      "title": "Machine Learning Researcher in Behavioral Modeling",
       "company": "Wisconsin Institute for Discovery",
       "location": "Madison, WI",
       "duration": "Jan 2024--Present",
       "projectLink": "/portfolio/projects/2",
       "responsibilities": [
-        "Modeled early-quitting behavior from windowed head-rotation telemetry across multiple educational VR games; trained supervised models (e.g., Random Forests) achieving ROC-AUC ~0.80 within-game and ~0.73 on held-out games (>7,000 sessions).",
+        "Developed temporal features and supervised models from movement and interaction telemetry across 7,000+ VR sessions to study task performance and early quitting.",
         "Evaluated robustness under time-based and cross-game splits to approximate new-player populations, showing moderate but meaningful generalization across deployments and titles.",
         "Applied SHAP-based feature attribution to surface interpretable movement patterns linked to quitting (e.g., oscillatory searching, frozen gaze), informing a TVCG submission on early-quit prediction.",
         "Translated the model findings into a proposed, testable product intervention with a primary success metric, guardrail metrics, and a triggered randomized evaluation plan; the intervention has not yet been deployed."
@@ -68,7 +79,7 @@
       "title": "Undergraduate Researcher",
       "company": "Department of Theatre",
       "location": "Madison, WI",
-      "duration": "May 2023--Present",
+      "duration": "May 2023–Jul 2025",
       "projectLink": "/portfolio/projects/3",
       "responsibilities": [
         "Prototyped and iterated a one-on-one VR environment (Beyond the Garden of Adrian) in Unity (C#), investigated factors in design that shape player-actor interaction.",
@@ -90,7 +101,7 @@
       "title": "Undergraduate Researcher",
       "company": "Department of Computer Science",
       "location": "Madison, WI",
-      "duration": "Sep 2024--Present",
+      "duration": "Sep 2024–May 2025",
       "projectLink": "/portfolio/projects/4",
       "responsibilities": [
         "Applied Q-learning and policy-gradient methods to compute Nash-equilibrium strategies in multi-agent settings under partial observability.",
@@ -108,7 +119,7 @@
       "title": "Senior Narrative Designer & Developer",
       "company": "Minerva Studio",
       "location": "Madison, WI",
-      "duration": "Sep 2022--Present",
+      "duration": "Started Sep 2022",
       "projectLink": "/portfolio/projects/1",
       "responsibilities": [
         "Led narrative and gameplay design for the 2D roguelike Library of Meialia; built interactive storytelling and dialogue systems and integrated encyclopedia interfaces (Unity, C#, Lua); released a public demo on Steam.",
@@ -118,10 +129,21 @@
   ],
   "teaching": [
     {
+      "title": "Graduate Teaching Assistant",
+      "company": "STAT 107: Data Science Discovery · University of Illinois Urbana-Champaign",
+      "school": "University of Illinois Urbana-Champaign",
+      "duration": "Aug 2026–Present",
+      "responsibilities": [
+        "Lead lab sections and hold office hours for introductory data science.",
+        "Help students work through Python-based data analysis and model evaluation; prepare review materials and explanations.",
+        "Develop a teaching inquiry into generative-AI-supported extension activities for students already comfortable with the core lab concepts."
+      ]
+    },
+    {
       "title": "Peer Mentor",
       "company": "Computer Sciences 540: Introduction to Artificial Intelligence",
       "school": "University of Wisconsin--Madison",
-      "duration": "Sep 2024--Present",
+      "duration": "During undergraduate study",
       "responsibilities": [
         "Supported instruction for Introduction to Artificial Intelligence.",
         "Assisted students with principles of knowledge-based search, automatic deduction, predicate logic, machine learning, and probabilistic reasoning.",
@@ -132,12 +154,68 @@
       "title": "Peer Mentor",
       "company": "Computer Sciences 559: Computer Graphics",
       "school": "University of Wisconsin--Madison",
-      "duration": "Sep 2024--Present",
+      "duration": "During undergraduate study",
       "responsibilities": [
         "Supported instruction for Computer Graphics.",
         "Assisted students with fundamentals of image representation, geometric transformations, modeling, rendering, and animation.",
         "Guided labs and projects involving curves, surfaces, visualization, and multimedia applications, building on vector mathematics and linear algebra."
       ]
+    }
+  ],
+  "current_projects": [
+    {
+      "title": "Frozen LLMs for Player Action Prediction",
+      "status": "Ongoing research · 2026",
+      "summary": "Testing whether action semantics and gameplay history help frozen language models predict a player's next action.",
+      "projectLink": "/portfolio/projects/8"
+    },
+    {
+      "title": "AI Assistant Awareness, Warmth & Eeriness",
+      "status": "Study design · 2026",
+      "summary": "Designing a study of how an assistant's expressed knowledge about a person and their surroundings changes the experience of AI assistance.",
+      "projectLink": "/portfolio/projects/9"
+    },
+    {
+      "title": "Behavioral Signatures of Virtual Embodiment",
+      "status": "Ongoing analysis · 2026",
+      "summary": "Linking embodiment questionnaires with VR movement and interaction traces to test interpretable behavioral measures.",
+      "projectLink": "/portfolio/projects/10"
+    },
+    {
+      "title": "Hatched / Waddle: Penguin Perspective Study",
+      "status": "Development & validation · 2026",
+      "summary": "Building Unity study infrastructure for a comparison of embodied penguin and scientist perspectives.",
+      "projectLink": "/portfolio/projects/11"
+    },
+    {
+      "title": "Avatar Color: Scoping Review",
+      "status": "Review in progress · 2026",
+      "summary": "Screening and synthesizing research on avatar color and user experience with a collaborative review team.",
+      "projectLink": "/portfolio/projects/12"
+    },
+    {
+      "title": "Support Without Sycophancy",
+      "status": "Class project in progress · Fall 2026",
+      "summary": "A class research project separating emotional validation from agreement with a person's interpretation of an interpersonal situation.",
+      "projectLink": "/portfolio/projects/13"
+    },
+    {
+      "title": "Adaptive AI Assistance for Learning",
+      "status": "Class project in progress · Fall 2026",
+      "summary": "An AIs in the World group project studying when an AI tutor should offer hints or answers.",
+      "projectLink": "/portfolio/projects/14"
+    },
+    {
+      "title": "Generative AI for Lab Enrichment",
+      "status": "Teaching proposal · Fall 2026",
+      "summary": "A teaching inquiry into meaningful extension activities for students who finish introductory data-science lab work early.",
+      "projectLink": "/portfolio/projects/15"
+    },
+    {
+      "title": "Unity Game Prototype Collection",
+      "status": "Concept development · 2026",
+      "summary": "A set of small game concepts exploring memory, attention, perspective, drawing, and the consequences of wishes.",
+      "projectLink": "/portfolio/projects/16"
     }
   ]
 }

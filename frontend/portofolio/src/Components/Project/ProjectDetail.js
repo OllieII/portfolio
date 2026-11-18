@@ -314,19 +314,20 @@ export const ProjectDetail = () => {
                   )}
                 </NavigationContext>
                 <ProjectTitle>{projectData.title || siteText.projectDetail.fallbackTitle}</ProjectTitle>
+                {projectData.status && <LensLead>{projectData.status}</LensLead>}
                 {lensCopy?.emphasis && <LensLead>{lensCopy.emphasis}</LensLead>}
               </DetailHeader>
               <Content>
                 {lensCopy && (
                   <LensEvidence>
-                    <span>First evidence through this lens</span>
+                    <span>Work to date</span>
                     <div>
                       <strong>{lensCopy.featuredEvidence}</strong>
                       <p>{lensCopy.summary}</p>
                     </div>
                   </LensEvidence>
                 )}
-                <MediaSection mediaList={projectData.details.media} />
+                {projectData.details.media?.length > 0 && <MediaSection mediaList={projectData.details.media} />}
                 <SubTitleSection sections={detailSections} />
               </Content>
             </MainContent>
@@ -347,3 +348,4 @@ export const ProjectDetail = () => {
 };
 
 export default ProjectDetail;
+

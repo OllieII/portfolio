@@ -262,6 +262,10 @@
   gap: clamp(34px, 5vw, 62px);
 }
 
+.research-featured-text {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .research-featured-media {
   min-height: clamp(340px, 42vw, 560px);
   background-size: cover;
@@ -567,3 +571,4 @@
     grid-template-columns: 1fr;
   }
 }
+

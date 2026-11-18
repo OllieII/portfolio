@@ -21,6 +21,19 @@
   background: rgba(248, 244, 235, 0.78);
 }
 
+.project-card-text .project-copy {
+  border-top: 0;
+  padding-top: 10px;
+}
+
+.project-status {
+  color: #5c5549;
+  font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  font-size: 0.73rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
 .project-card:nth-child(1) {
   grid-column: span 7;
 }
@@ -243,3 +256,4 @@
     grid-template-columns: 1fr;
   }
 }
+

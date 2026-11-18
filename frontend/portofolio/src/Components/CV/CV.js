@@ -166,7 +166,7 @@ const ExperienceOrg = styled.div`
 const ExperienceDates = styled.div`
   font-size: 0.78rem;
   color: #6c6255;
-  white-space: nowrap;
+  white-space: normal;
   text-align: right;
   font-family: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 
@@ -335,7 +335,7 @@ export function CV() {
 
         {cvData.publications && cvData.publications.length > 0 && (
           <Section>
-            <SectionTitle>Publications & Submissions</SectionTitle>
+            <SectionTitle>Manuscripts & Submissions</SectionTitle>
             <SectionBody>
               <OrderedList>
                 {cvData.publications.map((pub, idx) => (
@@ -435,6 +435,24 @@ export function CV() {
           </Section>
         )}
 
+        {cvData.current_projects && cvData.current_projects.length > 0 && (
+          <Section>
+            <SectionTitle>Current Projects</SectionTitle>
+            <SectionBody>
+              {cvData.current_projects.map(project => (
+                <ExperienceItem key={project.projectLink}>
+                  <ExperienceHeader>
+                    <ExperienceRole>{project.title}</ExperienceRole>
+                    <ExperienceDates>{project.status}</ExperienceDates>
+                  </ExperienceHeader>
+                  <p>{project.summary}</p>
+                  {renderProjectLink(project)}
+                </ExperienceItem>
+              ))}
+            </SectionBody>
+          </Section>
+        )}
+
         {cvData.teaching && cvData.teaching.length > 0 && (
           <Section>
             <SectionTitle>Teaching & Mentorship</SectionTitle>
@@ -472,3 +490,4 @@ export function CV() {
 }
 
 export default CV;
+

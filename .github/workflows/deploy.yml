@@ -30,6 +30,10 @@ jobs:
         run: npm ci
         working-directory: frontend/portofolio
 
+      - name: Test
+        run: npm test -- --watchAll=false --runInBand
+        working-directory: frontend/portofolio
+
       - name: Build
         run: npm run build
         working-directory: frontend/portofolio
@@ -49,3 +53,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+

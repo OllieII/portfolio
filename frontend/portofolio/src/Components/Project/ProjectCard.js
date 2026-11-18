@@ -14,10 +14,11 @@ function ProjectCard({
   evidence,
   tags = [],
   index,
+  status,
 }) {
   return (
-    <div className={`project-card ${category}`}>
-      <div className="project-media" style={{ backgroundImage: `url(${media})` }} />
+    <div className={`project-card ${category}${media ? '' : ' project-card-text'}`}>
+      {media && <div className="project-media" style={{ backgroundImage: `url(${media})` }} aria-hidden="true" />}
       <div className="project-copy">
         <div className="project-meta-block">
           <p className="project-number">{String(index).padStart(2, '0')}</p>
@@ -25,6 +26,7 @@ function ProjectCard({
         </div>
         <div className="project-main">
           <Link to={link} className="project-link">{title}</Link>
+          {status && <p className="project-status">{status}</p>}
           <p className="project-signal">{signal}</p>
         </div>
         <p className="project-brief">{brief}</p>
@@ -48,3 +50,4 @@ function ProjectCard({
 }
 
 export default ProjectCard;
+

@@ -55,9 +55,9 @@ test('Product view changes order and copy without duplicating project data', () 
 
   const projectLinks = [...container.querySelectorAll('.project-link')];
   expect(projectLinks[0]).toHaveTextContent('Predicting Early Quitting from VR Telemetry');
-  expect(projectLinks[1]).toHaveTextContent('Virtual Theatre: Beyond the Garden of Adrian');
-  expect(projectLinks[2]).toHaveTextContent('Probe the Milky Way Density Structure');
-  expect(projectLinks[3]).toHaveTextContent('Partially Observable Markov Decision Process');
+  expect(projectLinks[1]).toHaveTextContent('Frozen LLMs for Player Action Prediction');
+  expect(projectLinks[2]).toHaveTextContent('Adaptive AI Assistance for Learning');
+  expect(projectLinks[3]).toHaveTextContent('Hatched / Waddle: Penguin Perspective Study');
   projectLinks.forEach(link => {
     expect(link.getAttribute('href')).toContain('?lens=product');
   });
@@ -86,3 +86,4 @@ test('an unknown lens safely falls back to All Work', () => {
   expect(screen.getByRole('heading', { name: 'All Work' })).toBeInTheDocument();
   expect(container.querySelectorAll('.project-card')).toHaveLength(projectData.length);
 });
+

@@ -33,6 +33,7 @@ function Projects() {
         signal={lensCopy?.emphasis || project.signal}
         evidence={lensCopy?.featuredEvidence}
         tags={project.tags}
+        status={project.status}
       />
     );
   };
@@ -132,12 +133,12 @@ function Projects() {
               const relevance = project.lenses.research.summary;
 
               return (
-                <article className="research-featured" key={project.id}>
-                  <div
+                <article className={`research-featured${project.media ? '' : ' research-featured-text'}`} key={project.id}>
+                  {project.media && <div
                     className="research-featured-media"
                     style={{ backgroundImage: `url(${project.media})` }}
                     aria-hidden="true"
-                  />
+                  />}
                   <div className="research-featured-copy">
                     <p className="research-section-label">
                       {isFeatured
@@ -146,6 +147,7 @@ function Projects() {
                     </p>
                     <p className="research-card-number">{String(index + 1).padStart(2, '0')}</p>
                     <h3>{project.title}</h3>
+                    {project.status && <p className="project-status">{project.status}</p>}
                     <div className="research-evidence-block">
                       <span>
                         {isFeatured
@@ -215,3 +217,4 @@ function Projects() {
 }
 
 export default Projects;
+
