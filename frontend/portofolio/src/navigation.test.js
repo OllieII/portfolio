@@ -135,7 +135,7 @@ test('a project opened through a lens returns to the same Work view', () => {
   expect(screen.getByText('Viewing as: HCI & Human-Centered AI Research')).toBeInTheDocument();
   expect(screen.getByText('Validating interpretable behavioral signals across VR contexts'))
     .toBeInTheDocument();
-  expect(screen.getByText(/7,000\+ sessions; ~0.80 within-game ROC-AUC/))
+  expect(screen.getByText(/7,000\+ sessions, within-game and held-out-game evaluations/))
     .toBeInTheDocument();
   expect(screen.getByTestId('detail-section-order')).toHaveTextContent(
     'Project Description | My Responsibility | Tech Stack | Product Translation (Proposed)'
@@ -178,3 +178,4 @@ test('Product lens changes detail emphasis without duplicating project content',
     'Product Translation (Proposed) | Project Description | My Responsibility | Tech Stack'
   );
 });
+
